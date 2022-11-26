@@ -22,7 +22,7 @@ contract SpaceX is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableUpgr
 
 contract SpaceXV2 is SpaceX {
     uint fee;
-    function version() external view returns (string memory) {
+    function version() external pure returns (string memory) {
         return "V2";
     }
 }
@@ -31,7 +31,7 @@ contract SpaceXV3 is SpaceX {
     uint fee;
     string tax;
 
-    function version() pure external returns (string memory) {
+    function version() external pure returns (string memory) {
         return "V3";
     }
 }
